@@ -8,7 +8,7 @@ def paint(img_path: str, start_x: int, start_y: int, delay: float):
     """
     image = Image.open(img_path)
 
-    pyautogui.PAUSE = between_clicks_delay
+    pyautogui.PAUSE = delay
     stop_flag = False
     for x in range(image.width):
         if stop_flag: break
